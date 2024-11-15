@@ -54,9 +54,9 @@ class Computer {
   }
 
   public void display() {
-    System.out.printLn("CPU: " + _cpu);
-    System.out.printLn("Memory: " + _memory);
-    System.out.printLn("Storage: " + _storage);
+    System.out.println("CPU: " + _cpu);
+    System.out.println("Memory: " + _memory);
+    System.out.println("Storage: " + _storage);
   }
 };
 
@@ -81,10 +81,8 @@ class Main {
     // Products
     Computer desktop = assembler.assembleDesktop();
 
-    System.out.printLn("Desktop Computer Configuration:");
+    System.out.println("Desktop Computer Configuration:");
     desktop.display();
-
-    return 0;
   }
 }
 

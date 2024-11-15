@@ -65,7 +65,7 @@ class EuropeSpecification implements CarSpecification {
 }
 
 // Client Code
-public class CarFactoryClient {
+public class AbstractFactoryClient {
   public static void main(String[] args) {
     // Creating cars for North America
     CarFactory northAmericaFactory = new NorthAmericaCarFactory();

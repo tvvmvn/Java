@@ -1,5 +1,9 @@
-package relationships;
+class Address {
+  public String city;
+  public String street;
+};
 
-public class association {
-  
-}
+class Person {
+  public String name;
+  public Address address;
+};

@@ -1,5 +1,14 @@
-package relationships;
+// General
+class Coffee {
+  public String espresso;
+};
 
-public class generalisation {
-  
-}
+// These are types of coffee.
+class Americano extends Coffee {
+  public String water;
+};
+
+class Latte extends Coffee {
+  public String water;
+  public String milk;
+};

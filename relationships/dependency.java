@@ -1,5 +1,6 @@
-package relationships;
+class Gasoline {};
 
-public class dependency {
-  
-}
+class Car {
+  // Gasoline as parameters
+  public void drive(Gasoline gasoline) {}
+};
