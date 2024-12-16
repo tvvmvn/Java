@@ -1,6 +1,10 @@
-
 public class Lab {
+
+  static void f() throws RuntimeException {
+    System.out.println("f invoked");
+  }
+
   public static void main(String[] args) {
-    System.out.println("hello lab");
+    f();
   }
 }

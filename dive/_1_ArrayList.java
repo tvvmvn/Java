@@ -1,4 +1,4 @@
-package dsa;
+package dive;
 import java.util.ArrayList;
 
 public class _1_ArrayList {

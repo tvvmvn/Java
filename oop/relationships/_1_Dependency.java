@@ -7,4 +7,4 @@ class Car {
   public void drive(Gasoline gasoline) {}
 };
 
-class _1_Dependency {}
+public class _1_Dependency {}
