@@ -1,6 +1,7 @@
 package basic;
 
 public class _1_Method {
+
   static void myMethod() {
     System.out.println("I just got executed!");
   }
@@ -10,8 +11,5 @@ public class _1_Method {
   }
 }
 
-/* 
-Output
-
-I just got executed!
-*/
+// Output
+// I just got executed!

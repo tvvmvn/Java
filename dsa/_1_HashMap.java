@@ -1,21 +1,21 @@
 package dsa;
 
-// Import the HashMap class
 import java.util.HashMap;
 
 public class _1_HashMap {
   public static void main(String[] args) {
 
-    // Create a HashMap object called people
     HashMap<String, Integer> people = new HashMap<String, Integer>();
 
-    // Add keys and values (Name, Age)
+    // Add a keys/value pair(name, age)
     people.put("John", 32);
     people.put("Steve", 30);
     people.put("Angie", 33);
 
-    for (String i : people.keySet()) {
-      System.out.println("key: " + i + " value: " + people.get(i));
-    }
+    // display
+    System.out.println(people);
   }
 }
+
+// Output
+// {Angie=33, Steve=30, John=32}

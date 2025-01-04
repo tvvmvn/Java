@@ -3,8 +3,10 @@ import java.util.Arrays;
 
 public class _1_ArraySorting {
   public static void main(String[] args) {
-    String[] cars = {"Volvo", "BMW", "Tesla", "Ford", "Fiat", "Mazda", "Audi"};
+
+    String[] cars = {"Volvo", "BMW", "Tesla", "Ford" };
     
+    // Java has Built-in methods for sorting
     Arrays.sort(cars);
     
     for (String i : cars) {
@@ -12,3 +14,9 @@ public class _1_ArraySorting {
     }
   }
 }
+
+// Output
+// BMW
+// Ford
+// Tesla
+// Volvo

@@ -12,6 +12,8 @@ class Rectangle {
 // Derived classes must be substitutable for their base class.
 // and this is violation
 class Square extends Rectangle {
+
+  @Override
   public int getSize() {
     return width * width;
   }

@@ -2,27 +2,35 @@ package oop.features;
 
 // Abstract class
 abstract class Animal {
-  // Abstract method (does not have a body)
+
+  // Abstract method 
   public abstract void animalSound();
   
-  // Regular method
+  // Normal method
   public void sleep() {
     System.out.println("Zzz");
   }
 }
 
-// Subclass (inherit from Animal)
+// Subclass 
 class Pig extends Animal {
+
+  // The body of animalSound() is provided here
   public void animalSound() {
-    // The body of animalSound() is provided here
     System.out.println("The pig says: wee wee");
   }
 }
 
 class _1_Abstraction {
   public static void main(String[] args) {
-    Pig myPig = new Pig(); // Create a Pig object
-    myPig.animalSound();
-    myPig.sleep();
+
+    Pig pig = new Pig(); 
+    
+    pig.animalSound();
+    pig.sleep();
   }
 }
+
+// Output
+// The pig says: wee wee
+// Zzz

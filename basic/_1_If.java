@@ -2,8 +2,12 @@ package basic;
 
 public class _1_If {
   public static void main(String[] args) {
+    
     if (20 > 18) {
-      System.out.println("20 is greater than 18"); // obviously
+      System.out.println("20 is greater than 18"); 
     }  
   }
 }
+
+// Output
+// 20 is greater than 18

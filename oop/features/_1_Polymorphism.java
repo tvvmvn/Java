@@ -29,19 +29,18 @@ public class _1_Polymorphism {
     // Objects to be treated as instances of their parent class 
     // rather than their actual class.
     Animal dog = new Dog();
-    Animal cat = new Cat();
-    Animal pig = new Pig();
-        
     dog.sound();
+
+    Animal cat = new Cat();
     cat.sound();
+    
+    Animal pig = new Pig();    
     pig.sound();
   }
 }
 
-/*
- * Output
- * 
- * bow wow
- * meow
- * wee wee
- */
+
+// Output
+// bow wow
+// meow
+// wee wee

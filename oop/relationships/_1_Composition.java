@@ -1,19 +1,25 @@
 package oop.relationships;
 
-
 /*
 In the UML, aggregation and composition are defined as 
 special forms of associations with the intended meaning 
 of classifying part-whole-relationships.
 */
 
-class Engine {};
+// Exclusive (non-shareable) parts.
+class AvanteEngine {};
 
-class Car {
-  // to have exclusive (or non-shareable) parts.
-  public Engine engine;
+class Avante {
+  public AvanteEngine engine;
 }
 
 class _1_Composition {
-  // public static void main(String[] args) {}
+  public static void main(String[] args) {
+    
+    AvanteEngine avanteEngine = new AvanteEngine();
+
+    Avante avante = new Avante();
+    
+    avante.engine = avanteEngine;
+  }
 }

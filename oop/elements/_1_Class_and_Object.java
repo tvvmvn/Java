@@ -7,12 +7,13 @@ class Car {
 
   // Operation 
   public void run() {
-    System.out.println("The car is running");
+    System.out.println("Running powered by " + engine);
   }
 }
 
 public class _1_Class_and_Object {
   public static void main(String[] args) {
+
     // Instances of Car
     Car avante = new Car();
     avante.engine = "Gasoline";
@@ -23,3 +24,7 @@ public class _1_Class_and_Object {
     xm3Hybrid.run();
   }
 }
+
+// Output
+// Running powered by Gasoline
+// Running powered by Hybrid

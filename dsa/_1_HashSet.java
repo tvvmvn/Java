@@ -1,12 +1,13 @@
 package dsa;
 
-// Import the HashSet class
 import java.util.HashSet;
 
 public class _1_HashSet {
   public static void main(String[] args) {
+
     HashSet<String> cars = new HashSet<String>();
 
+    // each element is an unique key.
     cars.add("Volvo");
     cars.add("BMW");
     cars.add("Ford");
@@ -17,8 +18,5 @@ public class _1_HashSet {
   }
 }
 
-/* 
-Output
-
-[Volvo, Mazda, Ford, BMW]
-*/
+// Output
+// [Volvo, Mazda, Ford, BMW]

@@ -9,20 +9,27 @@ class Cat {
 }
 
 class Home<T> {
-  T adopted;
+  T adoptedOne;
 
-  Home(T adopted) {
-    this.adopted = adopted;
+  Home(T adoptedOne) {
+    this.adoptedOne = adoptedOne;
   }
 }
 
-// Driver
 public class _1_Association {
   public static void main(String[] args) {
-    Home<Dog> homeWithDog = new Home<Dog>(new Dog());
-    Home<Cat> homeWithCat = new Home<Cat>(new Cat());
 
-    homeWithDog.adopted.sound();
-    homeWithCat.adopted.sound();
+    Dog dog = new Dog();
+    Cat cat = new Cat();
+
+    Home<Dog> homeWithDog = new Home<Dog>(dog);
+    Home<Cat> homeWithCat = new Home<Cat>(cat);
+
+    homeWithDog.adoptedOne.sound();
+    homeWithCat.adoptedOne.sound();
   }
 }
+
+// Output
+// bow wow
+// meow

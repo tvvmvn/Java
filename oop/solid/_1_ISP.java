@@ -1,6 +1,6 @@
 package oop.solid;
 
-// fat interface
+// A fat interface
 interface MFP {
   public void print();
   public void scan();
@@ -20,4 +20,15 @@ interface Fax {
   public void fax();
 };
 
-public class _1_ISP {}
+// Concrete class
+class MyPrinter implements Printer {
+  public void print() {
+    System.out.println("It is printing a document.");
+  }
+}
+
+public class _1_ISP {
+  public static void main(String[] args) {
+    
+  }
+}
