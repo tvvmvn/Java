@@ -1,4 +1,4 @@
-package dive;
+package basic;
 
 enum Level {
   LOW,
