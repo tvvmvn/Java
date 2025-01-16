@@ -17,5 +17,6 @@ public class SwitchExample {
       // optional, when all case is false
       default:
       System.out.println("Looking forward to the Weekend");
+    }
   }
 }
