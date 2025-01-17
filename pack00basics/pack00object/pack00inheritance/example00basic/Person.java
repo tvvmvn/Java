@@ -1,4 +1,4 @@
-package pack00object.example00inheritance;
+package pack00object.pack00inheritance.example00basic;
 
 public class Person {
   String firstName;

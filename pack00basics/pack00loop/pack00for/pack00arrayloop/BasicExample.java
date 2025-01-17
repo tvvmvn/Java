@@ -1,6 +1,6 @@
-package pack00loop.pack00for;
+package pack00loop.pack00for.pack00arrayloop;
 
-public class ArrayLoopExample {
+public class BasicExample {
   public static void main(String[] args) {
     
     int nums[] = {10, 20, 30};

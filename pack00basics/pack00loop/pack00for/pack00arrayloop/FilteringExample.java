@@ -1,6 +1,6 @@
-package pack00loop.pack00for;
+package pack00loop.pack00for.pack00arrayloop;
 
-public class ArrayLoopExample2 {
+public class FilteringExample {
   public static void main(String[] args) {
     
     int ages[] = {12, 24, 36};

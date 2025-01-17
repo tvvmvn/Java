@@ -3,6 +3,7 @@ package pack00datatype;
 public class BasicExample {
   public static void main(String[] args) {
     
+    // Personal info about John Doe
     String name = "John Doe";
     int age = 30;
     int height = 180;

@@ -1,4 +1,4 @@
-package pack00object.pack00basic.example00basic;
+package pack00object.example00basic;
 
 public class Person {
   String firstName;
