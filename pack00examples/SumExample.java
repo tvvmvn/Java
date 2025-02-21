@@ -1,7 +1,9 @@
-package pack00basic.pack00loop.pack00for;
+package pack00examples;
 
 public class SumExample {
   public static void main(String[] args) {
+    
+    // Q. get sum of 1 + .. + 10
     
     int sum = 0;
 

@@ -1,4 +1,4 @@
-package pack00basic.pack00loop.pack00for.pack00arrayloop;
+package pack00examples;
 
 public class FilteringExample {
   public static void main(String[] args) {
