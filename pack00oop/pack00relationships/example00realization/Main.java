@@ -1,5 +1,23 @@
 package pack00relationships.example00realization;
 
+interface Flyable {
+  public void fly();
+};
+
+class Bird implements Flyable {
+
+  public void fly() {
+    System.out.println("It can fly with wings");
+  }
+};
+
+class Plane implements Flyable {
+
+  public void fly() {
+    System.out.println("It can fly with technology");
+  }
+};
+
 public class Main {
   public static void main(String[] args) {
     

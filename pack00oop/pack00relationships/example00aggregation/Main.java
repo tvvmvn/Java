@@ -1,5 +1,33 @@
 package pack00relationships.example00aggregation;
 
+class Printer {
+  public String model;
+
+  public Printer(String model) {
+    this.model = model;
+  }
+
+  public String toString() {
+    return String.format("Printer[model='%s']", model);
+  }
+};
+
+class ComputerA {
+  public Printer printer;
+
+  public ComputerA(Printer printer) {
+    this.printer = printer;
+  }
+};
+
+class ComputerB {
+  public Printer printer;
+
+  public ComputerB(Printer printer) {
+    this.printer = printer;
+  }
+};
+
 /*
 In the UML, aggregation and composition are defined as 
 special forms of associations with the intended meaning 

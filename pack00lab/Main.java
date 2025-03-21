@@ -1,15 +1,9 @@
 package pack00lab;
-import java.util.ArrayList;
 
 public class Main {
   public static void main(String[] args) {
 
-    // print only adults
+    String s = "hello";
 
-    int ages[] = {18, 22, 34, 36};
-
-    for (int i = 0; i < ages.length; i++) {
-      
-    }
   }
 }

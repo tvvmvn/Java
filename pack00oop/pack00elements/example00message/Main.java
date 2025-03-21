@@ -1,5 +1,11 @@
 package pack00elements.example00message;
 
+class Calculator {
+  int add(int x, int y) {
+    return x + y;
+  }
+}
+
 class Main {
   public static void main(String[] args) {
 
@@ -8,8 +14,8 @@ class Main {
     // messages (request to object from outside)
     int r = cal.add(1, 2);
 
-    System.out.print("1 + 2 = ");
-    System.out.print(r);
+    System.out.println("1 + 2 = ");
+    System.out.println(r);
   }
 }
 

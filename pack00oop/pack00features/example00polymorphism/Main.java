@@ -1,5 +1,29 @@
 package pack00features.example00polymorphism;
 
+class Animal {
+  public void sound() {
+    System.out.println("The animal makes a sound");
+  }
+}
+
+class Cat extends Animal {
+  public void sound() {
+    System.out.println("meow");
+  }
+}
+
+class Dog extends Animal {
+  public void sound() {
+    System.out.println("bow wow");
+  }
+}
+
+class Pig extends Animal {
+  public void sound() {
+    System.out.println("wee wee");
+  }
+}
+
 public class Main {
   public static void main(String[] args) {
      
