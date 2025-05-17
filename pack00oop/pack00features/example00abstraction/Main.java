@@ -1,29 +1,29 @@
 package pack00features.example00abstraction;
 
-interface Animal {
-  public void sound();
+interface Vehicle {
+  public void run(); // abstract 
 }
 
-class Cat implements Animal {
-  public void sound() {
-    System.out.println("meow");
+class Car implements Vehicle {
+  public void run() {
+    System.out.println("run by engine");
   }
 }
 
-class Dog implements Animal {
-  public void sound() {
-    System.out.println("bow wow");
+class Bicycle implements Vehicle {
+  public void run() {
+    System.out.println("run by legs");
   }
 }
 
 public class Main {
   public static void main(String[] args) {
 
-    Dog dog = new Dog();
-    Cat cat = new Cat();
+    Bicycle bicycle = new Bicycle();
+    Car car = new Car();
     
-    dog.sound();
-    cat.sound();
+    car.run();
+    bicycle.run();
   }
 }
 

@@ -1,28 +1,29 @@
 package pack00object.pack00inheritance.example00basic;
 
 class Person {
-  String firstName;
-  String lastName;
-  int age;
+  String name;
+  
+  void greeting() {
+    System.out.println("hello");
+  }
 }
 
 class Student extends Person {
   int grade;
 }
 
+class Professor extends Person {
+  String subject;
+}
+
 public class Main {
   public static void main(String[] args) {
-
+    
     Student student = new Student();
+    student.name = "John Doe";
+    student.grade = 4;
 
-    student.firstName = "John";
-    student.lastName = "Doe";
-    student.age = 30;
-    student.grade = 3;
-
-    System.out.println(student.firstName);
-    System.out.println(student.lastName);
-    System.out.println(student.age);
-    System.out.println(student.grade);
+    System.out.println(student.name + " " + student.grade);
+    student.greeting();
   }
 }

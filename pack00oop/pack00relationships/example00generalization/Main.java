@@ -1,44 +1,35 @@
 package pack00relationships.example00generalization;
 
 class Person {
-  String firstName;
-  String lastName;
+  String name;
 
-  public Person(String firstName, String lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+  public Person(String name) {
+    this.name = name;
   }
 }
 
 class Student extends Person {
-
   public int grade = 3;
 
-  public Student(String firstName, String lastName, int grade) {
-    super(firstName, lastName);
+  public Student(String name, int grade) {
+    super(name);
     this.grade = grade;
   }
 };
 
-class Employee extends Person {
+class Professor extends Person {
+  public String subject;
 
-  public String dept;
-
-  public Employee(String firstName, String lastName, String dept) {
-    super(firstName, lastName);
-    this.dept = dept;
+  public Professor(String name, String subject) {
+    super(name);
+    this.subject = subject;
   }
 };
 
 public class Main {
   public static void main(String[] args) {
 
-    // Generalisation 
-    Person student = new Student("John", "Doe", 3);
-    Person employee = new Employee("Jane", "Doe", "Marketing");
+    Person student = new Student("John Doe", 3);
+    Person employee = new Professor("Jane Doe", "Physics");
   }
 }
-
-// Output
-// Americano[beans='Columbia', water='2l']
-// Americano[beans='Columbia', water='2l', milk='Milk']

@@ -1,19 +1,18 @@
 package pack00object.example00abstract;
 
 abstract class Animal {
-  abstract void sound();
+  abstract void speak();
   // other functions like abstract or normal here..
 }
 
 class Cat extends Animal {
-  void sound() {
+  void speak() {
     System.out.println("meow");
   }
 }
 
 class Dog extends Animal {
-  // implementation of sound 
-  void sound() {
+  void speak() {
     System.out.println("bow wow!");
   }
 }
@@ -23,6 +22,6 @@ public class Main {
     
     Dog dog = new Dog();
 
-    dog.sound();
+    dog.speak();
   }
 }

@@ -1,32 +1,29 @@
 package pack00relationships.example00dependency;
 
-class Gasoline {
-
-  void fill() {
-     System.out.println("Gasoline has been filled");
-  }
-};
-
-class Car {
-
-  public void drive(Gasoline gasoline) {
-
-    gasoline.fill();
-
-    System.out.println("The car is running");
-  }
-};
-
-public class Main {
-  public static void main(String[] args) {
-    
-    Gasoline gasoline = new Gasoline();
-
-    Car car = new Car();
-
-    car.drive(gasoline);
+class Security {
+  void accessControl(Role role) {
+    if (role.name == "admin") {
+      System.out.println("accesssible to Top secret");
+    } else {
+      System.out.println("accessible to public data");
+    }
   }
 }
 
-// Output
-// The car is running
+class Role {
+  String name;
+  
+  Role(String name) {
+    this.name = name;
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    
+    Role role = new Role("admin");
+    Security security = new Security();
+
+    security.accessControl(role);
+  }
+}

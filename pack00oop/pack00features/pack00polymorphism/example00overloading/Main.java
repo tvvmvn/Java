@@ -1,4 +1,4 @@
-package pack00method.example00overloading;
+package pack00features.pack00polymorphism.example00overloading;
 
 class MyPrinter {
   

@@ -1,22 +1,12 @@
 package pack00features.example00inheritance;
 
 class Person {
-  String firstName;
-  String lastName;
+  String name;
   int age;
-
-  public String toString() {
-    return String.format("Person[firstName='%s', lastName='%s', age='%d']", this.firstName, this.lastName, this.age);
-  }
 }
 
 class Student extends Person {
   int grade;
-
-  @Override
-  public String toString() {
-    return String.format("Person[firstName='%s', lastName='%s', age='%d', grade='%d']", this.firstName, this.lastName, this.age, this.grade);
-  }
 }
 
 public class Main {
@@ -24,8 +14,7 @@ public class Main {
     
     Student student = new Student();
 
-    student.firstName = "John";
-    student.lastName = "Doe";
+    student.name = "John";
     student.age = 21;
     student.grade = 3;
 

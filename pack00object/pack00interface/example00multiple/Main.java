@@ -1,15 +1,14 @@
-package pack00lab;
-// import java.util.Scanner;
+package pack00object.pack00interface.example00multiple;
 
-interface Level1 {
-  void f1();
+interface Base1 {
+  void f1(); 
 }
 
-interface Level2 extends Level1 {
+interface Base2 {
   void f2();
 }
 
-class Derived implements Level2 {
+class Derived implements Base1, Base2 {
   public void f1() {
     System.out.println("f1 invoked");
   }

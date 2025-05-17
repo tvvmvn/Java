@@ -1,5 +1,4 @@
-package pack00lab;
-// import java.util.Scanner;
+package pack00object.pack00interface.example00multilevel;
 
 interface Level1 {
   void f1();
