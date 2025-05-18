@@ -2,8 +2,8 @@ package pack00solid.example00isp;
 
 // Break down the MFP interface into smaller interfaces.
 interface MFP {
-  // scanner
   // printer
+  // scanner
   // fax
 }
 
@@ -20,7 +20,4 @@ interface Fax {
 };
 
 public class Main {
-  public static void main(String[] args) {
-    System.err.println("isp example");
-  }
 }

@@ -1,6 +1,7 @@
 package pack00features.example00encapsulation;
 
 class Person {
+  
   private int salary;
   
   public int getSalary() {

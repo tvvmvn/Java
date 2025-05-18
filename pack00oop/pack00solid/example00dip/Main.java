@@ -5,14 +5,12 @@ interface Toy {
 }
 
 class Lego implements Toy {
-  
   public void use() {
     System.out.println("Assembling with colorful blocks");
   };
 };
 
 class Kids {
-
   // depends on toy interface, not on a concreate toy
   public void play(Toy toy) {
     toy.use();
@@ -21,10 +19,10 @@ class Kids {
 
 public class Main {
   public static void main(String[] args) {
-
+    
     Toy lego = new Lego();
-    Kids k = new Kids();
-  
-    k.play(lego);
+    
+    Kids kids = new Kids();
+    kids.play(lego);
   }
 }
