@@ -2,15 +2,21 @@ package pack00solid.example00srp;
 
 // Class should be responsible for only one task.
 class Chef {
-  public void cook() {};
+  void slice() {};
+  void boiling() {};
+  void tasting() {};
 };
 
 class Casher {
-  public void handlePayment() {};
+  void receiveMoney() {};
+  void giveCharge() {};
+  void handleFinance() {};
 };
 
 class Waiter {
-  public void serve() {};
+  void greeting() {};
+  void takeOrder() {};
+  void serveFood() {};
 };
 
 public class Main {}

@@ -1,21 +1,24 @@
 package pack00solid.example00lsp;
 
+// Derived classes must be substitutable for their base class.
+// and this is violation
+
 class Rectangle {
   
-  public int width;
-  public int height;
+   int width;
+   int height;
 
-  public int getSize() {
+   int getSize() {
     return width * height;
   }
 };
 
-// Derived classes must be substitutable for their base class.
-// and this is violation
 class Square extends Rectangle {
 
+  // width, height
+
   @Override
-  public int getSize() {
+   int getSize() {
     return width * width;
   }
 };
