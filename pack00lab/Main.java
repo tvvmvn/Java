@@ -1,4 +1,12 @@
 package pack00lab;
-// import java.util.Scanner;
 
-public abstract class Main {}
+import java.io.IOException;
+
+class Person {}
+
+public class Main {
+  public static void main(String[] args) {
+
+    throw new RuntimeException();
+  }
+}
