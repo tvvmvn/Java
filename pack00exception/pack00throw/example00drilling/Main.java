@@ -1,4 +1,4 @@
-package pack00exception.example00throws;
+package pack00exception.pack00throw.example00drilling;
 
 public class Main {
   static void f1() {
@@ -6,15 +6,11 @@ public class Main {
   }
   
   static void f2() {
-    try {
-      f3();
-    } catch (Exception ex) {
-      System.out.println("f2 ex: " + ex.getMessage());
-    }
+    f3();
   }
   
-  static void f3() throws Exception {
-    throw new Exception("Oops!");
+  static void f3() {
+    throw new RuntimeException("Oops!");
   }
 
   public static void main(String[] args) {

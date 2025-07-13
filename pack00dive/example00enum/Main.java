@@ -1,10 +1,23 @@
 package pack00dive.example00enum;
 
+enum Steak {
+  WELL,
+  MEDIUMWELL,
+  MEDIUMRARE,
+  RARE;
+
+  void show() {
+    System.out.println(this);
+  }
+}
 
 public class Main {
   public static void main(String[] args) {
-    SteakDoneness doneness = SteakDoneness.MEDIUMRARE;
+    
+    Steak mySteak = Steak.MEDIUMRARE;
+    Steak yourSteak = Steak.WELL;
 
-    System.out.println(doneness);
+    mySteak.show();
+    yourSteak.show();
   }
 }

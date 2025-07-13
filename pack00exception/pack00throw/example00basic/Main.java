@@ -1,4 +1,4 @@
-package pack00exception.example00throw;
+package pack00exception.pack00throw.example00basic;
 
 public class Main {
   public static void main(String[] args) {

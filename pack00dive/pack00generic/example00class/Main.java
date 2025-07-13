@@ -1,12 +1,16 @@
 package pack00dive.pack00generic.example00class;
 
+class Person<T> {
+  T Id;
+}
+
 public class Main {
   public static void main(String[] args) {
     
-    Test<Integer> iObj = new Test<Integer>();
-    iObj.prop = 2025;
+    Person<Integer> personWithIntId = new Person<Integer>();
+    personWithIntId.Id = 1;
 
-    Test<String> sObj = new Test<String>();
-    sObj.prop = "Hello";
+    Person<String> personWithStringId = new Person<String>();
+    personWithStringId.Id = "random-string-1";
   }
 }
